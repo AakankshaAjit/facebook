@@ -5,7 +5,7 @@ const Main = () => {
     <div className="flex phone:hidden justify-evenly bg-slate-200 items-center w-full h-[120vh]">
       <div className="flex h-[85%] flex-col items-center rounded-xl bg-white w-[25%]">
         <div className=" w-5/6  h-10 flex items-center justify-between p-10 pl-24 rounded-none ">
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Create New</button>
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ">Create New</button>
         
 
           
@@ -121,13 +121,26 @@ const Main = () => {
         <div className="w-[40%] h-16 bg-white mt-6 ml-6 flex flex-row">
         <img  className='w-10 h-10 mt-3 ml-6 mb-4 'src="https://cdn2.iconfinder.com/data/icons/circle-avatars-1/128/050_girl_avatar_profile_woman_suit_student_officer-512.png" alt="" />
       
-        <p className="text-sm font-bold mt-6 ml-6">Hexa Pentania</p>
+        <p className="text-sm font-bold mt-6 ml-6 ">Hexa Pentania</p>
         </div>
-        <div className="w-[40%] h-10 bg-white ml-28 flex flex-col">
-        <p className="text-sm font-medium mt-3 ml-6">whats on your mind, Hexania ?</p>
-        </div>
-        <div className="w-[90%] h-1 ml-8 bg-slate-500"></div>
-        <div className="w-[90%] h-20 ml-8 mb-4 bg-white flex flex-row gap-3">
+        <div className="w-[70%] h-10 bg-white ml-20   flex flex-col">
+        <div class="relative z-0 w-full">
+    <input type="text" id="floating_standard" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+    <label for="floating_standard" class="absolute text-sm  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Floating standard</label>
+</div></div>
+
+        
+    
+
+        
+        
+
+        
+        
+        
+        
+        {/* <div className="w-[90%] h-1 ml-8 bg-slate-500"></div> */}
+        <div className="w-[90%] h-20 ml-16 mb-4  flex flex-row gap-3">
           
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-11 text-pink-600">
   <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
@@ -141,6 +154,8 @@ const Main = () => {
   <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 00-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 01-.189-.866c0-.298.059-.605.189-.866zm2.023 6.828a.75.75 0 10-1.06-1.06 3.75 3.75 0 01-5.304 0 .75.75 0 00-1.06 1.06 5.25 5.25 0 007.424 0z" clip-rule="evenodd" />
 </svg>
 <p className="text-sm font-bold mt-3">Feeling/Activity</p>
+<p className="text-sm font-bold mt-3 pl-8">....</p>
+
 
 
 
@@ -150,7 +165,7 @@ const Main = () => {
         
       </div>
       <div className="w-[94%] h-[36%] bg-white">
-        <div className="w-[98%] h-[27%] bg-white flex flex-row">
+        <div className="w-[98%] h-[27%] bg-white flex  ml-4flex-row">
         <img className="w-12 h-10 mt-3 ml-6 mb-4 " src="https://img.freepik.com/premium-vector/3d-smiling-women-avatar-happy-face-icon-character-vector_313242-1220.jpg" alt="" />
         <p className="text-sm font-bold mt-7 ml-6 mb-4">Pentania Gloria</p>
         </div>
@@ -166,15 +181,20 @@ const Main = () => {
 
           </div>
           
-          <div className="w-[98%] h-[28%]  bg-white flex flex-row gap-14]">
+          <div className="w-[98%] h-[28%]  bg-white flex flex-row gap-22]">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-28">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
 </svg>
-<p className="text-sm font-medium">450</p>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 gap-2">
+<p className="text-sm font-medium ">450</p>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-6  pl-4 gap-2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
 </svg>
-<p className="text-sm font-medium">500</p>
+<p className="text-sm font-medium ">500</p>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-6 pl-4">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+</svg>
+<p className="text-sm font-medium ">100k</p>
+
 
 
 
@@ -272,8 +292,8 @@ const Main = () => {
             <span className="text-sm font-bold ml-2">Hexa Pentania</span>
             <span className="text-sm font-normal ml-2"> 1 mutual friend</span>
             <div className="w-[92%] h-16 ml-2 flex flex-row gap-2 ">
-            <button type="button" class= "text-white w-16 h-7 ml-2 mt-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-none text-xs px-2 py-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Conform</button>
-            <button type="button" class= "text-white w-18 h-7 ml-2 mt-2 bg-slate-400 hover:bg-slate-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-none text-xs px-2 py-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Delete</button>
+            <button type="button" class= "text-white w-16 h-7 ml-2 mt-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-2 py-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Conform</button>
+            <button type="button" class= "text-white w-18 h-7 ml-2 mt-2 bg-slate-400 hover:bg-slate-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-2 py-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Delete</button>
             </div>
           </div>
           
@@ -305,9 +325,12 @@ const Main = () => {
            <span className="text-lg font-medium mt-5">Jessica Sam Leonard</span>
           </div>
         </div>
+        
        
         </div>
         </div>
+        
+        
         
         
         
